@@ -6,7 +6,7 @@
 /*   By: pyg <pyg@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 11:51:37 by pyg               #+#    #+#             */
-/*   Updated: 2021/08/05 13:55:27 by pyg              ###   ########.fr       */
+/*   Updated: 2021/08/05 15:54:53 by pyg              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,11 @@ int	get_nbr_chunk(int i)
 		return (16);
 }
 
+/*
+** system("leaks push_swap");
+** exit(0);
+*/
+
 int	main(int ac, char **av)
 {
 	t_ps	ps;
@@ -57,10 +62,10 @@ int	main(int ac, char **av)
 	if (ac < 2)
 		return (0);
 	if (parsing(&ps, ac, av, 0) < 0)
-		return (error_msg(&ps, "ERROR: Parsing failed."));
+		return (error_msg(&ps, "ERROR.\n"));
 	ps.chunk = get_nbr_chunk(ps.i);
 	if (first_sort(&ps, 1) < 0)
-		return (error_msg(&ps, "ERROR: first_sort failed."));
+		return (error_msg(&ps, "ERROR.\n"));
 	if (ps.i <= 5)
 		small_algo(&ps);
 	else

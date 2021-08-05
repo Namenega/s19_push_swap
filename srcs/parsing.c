@@ -6,7 +6,7 @@
 /*   By: pyg <pyg@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 13:13:36 by pyg               #+#    #+#             */
-/*   Updated: 2021/08/05 14:32:07 by pyg              ###   ########.fr       */
+/*   Updated: 2021/08/05 15:52:30 by pyg              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,26 +49,11 @@ int	parse_string(t_ps *ps, int ac, char **av, int i)
 	return (0);
 }
 
-int	parsing_check(t_ps *ps, int ac, char **av)
-{
-	int	i;
-
-	i = 1;
-	if (!ft_strncmp(av[1], "-v", 2))
-	{
-		if (ac < 3)
-			return (-1);
-		ps->debug = 1;
-		i = 2;
-	}
-	return (i);
-}
-
 int	parsing(t_ps *ps, int ac, char **av, int a)
 {
 	int	i;
 
-	i = parsing_check(ps, ac, av);
+	i = 1;
 	if (i == -1)
 		return (-1);
 	while (av[i][a])

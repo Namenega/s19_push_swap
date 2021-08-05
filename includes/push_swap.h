@@ -6,7 +6,7 @@
 /*   By: pyg <pyg@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 11:43:07 by pyg               #+#    #+#             */
-/*   Updated: 2021/08/05 14:57:16 by pyg              ###   ########.fr       */
+/*   Updated: 2021/08/05 15:53:22 by pyg              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ void	bring_above(t_ps *ps);
 */
 
 int		parsing(t_ps *ps, int ac, char **av, int a);
-int		parsing_check(t_ps *ps, int ac, char **av);
 int		parse_string(t_ps *ps, int ac, char **av, int i);
 int		malloc_stack(t_ps *ps, int ac, char **av, int i);
 
