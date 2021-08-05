@@ -6,7 +6,7 @@
 /*   By: pyg <pyg@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:10:45 by pyg               #+#    #+#             */
-/*   Updated: 2021/08/04 14:28:04 by pyg              ###   ########.fr       */
+/*   Updated: 2021/08/05 14:53:58 by pyg              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ int	*sort_tab(t_ps *ps, int *tab, int a, int b)
 {
 	int		i;
 
-	// i = 1;
 	while (b < ps->len_a)
 	{
 		i = b + 1;
@@ -68,7 +67,7 @@ int	*sort_tab(t_ps *ps, int *tab, int a, int b)
 	return (tab);
 }
 
-int first_sort(t_ps *ps, int j)
+int	first_sort(t_ps *ps, int j)
 {
 	int	*tab;
 	int	i;

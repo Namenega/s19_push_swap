@@ -6,7 +6,7 @@
 /*   By: pyg <pyg@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:51:03 by pyg               #+#    #+#             */
-/*   Updated: 2021/08/04 14:59:51 by pyg              ###   ########.fr       */
+/*   Updated: 2021/08/05 14:52:29 by pyg              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ void	print_manip_next(t_ps *ps, char *s)
 		ft_putstr_fd("rrb\n", 1);
 		rrb(ps);
 	}
-
 }
 
 void	print_manip(t_ps *ps, char *s)

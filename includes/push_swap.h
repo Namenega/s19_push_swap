@@ -6,7 +6,7 @@
 /*   By: pyg <pyg@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 11:43:07 by pyg               #+#    #+#             */
-/*   Updated: 2021/08/05 13:55:42 by pyg              ###   ########.fr       */
+/*   Updated: 2021/08/05 14:57:16 by pyg              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <stdlib.h>
 # include <limits.h>
 
-typedef struct	s_ps
+typedef struct s_ps
 {
 	int		*stack_a;
 	int		*stack_b;
